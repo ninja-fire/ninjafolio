@@ -49,6 +49,14 @@ blockquote, q {
   quotes: none
 }
 
+button {
+  appearance: none;
+  border: 0;
+  background: transparent;
+  margin: 0;
+  padding: 0;
+}
+
 blockquote:before, blockquote:after, q:before, q:after {
   content: "";
   content: none

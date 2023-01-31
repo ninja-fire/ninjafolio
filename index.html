@@ -37,17 +37,17 @@
         </svg>
       </a></li>
 <!--      <li class="nav"><a href="#about">About</a></li>-->
-      <li class="nav"><a href="#work">Work</a></li>
-      <li class="nav"><a href="#testimonials">Testimonials</a></li>
+      <li class="nav"><a href="#work" class="menu-link">Work</a></li>
+      <li class="nav"><a href="#testimonials" class="menu-link">Testimonials</a></li>
     </ol>
   </nav>
 
-  <button class="btn-primary" type="button">Let's work together</button>
+  <button class="btn-primary btn-open" type="button">Let's work together</button>
 </header>
 
 <main>
   <div class="container" id="hero">
-    <div class="content">
+    <div class="gap-1 align-center">
       <div class="cadre">
         <div class="illu-container">
           <img src="./image/pfp.webp">
@@ -80,7 +80,7 @@
               </linearGradient>
             </defs>
           </svg>
-          <p class="body">User Research</p>
+          <p class="body caption center">User Research</p>
         </div>
       </div>
       <div class="cadre">
@@ -106,7 +106,7 @@
               </linearGradient>
             </defs>
           </svg>
-          <p class="body">Prototyping</p>
+          <p class="body caption center">Prototyping</p>
         </div>
       </div>
       <div class="cadre">
@@ -132,7 +132,7 @@
               </linearGradient>
             </defs>
           </svg>
-          <p class="body">Wireframing</p>
+          <p class="body caption center">Wireframing</p>
         </div>
       </div>
       <div class="cadre">
@@ -158,7 +158,7 @@
               </linearGradient>
             </defs>
           </svg>
-          <p class="body">Design Systems</p>
+          <p class="body caption center">Design Systems</p>
         </div>
       </div>
       <div class="cadre">
@@ -184,11 +184,11 @@
               </linearGradient>
             </defs>
           </svg>
-          <p class="body">Mockups integration</p>
+          <p class="body caption center">Mockups integration</p>
         </div>
       </div>
     </div>
-    <button class="btn-primary">Let's work together</button>
+    <button class="btn-primary btn-open">Let's work together</button>
   </div>
 
   <div class="container" id="about">
@@ -241,8 +241,8 @@
           </defs>
         </svg>
 
-        <h4>User-centered approach</h4>
-        <p class="body">My user-centered approach and strong design process will lead to increased conversions and user
+        <h4 class="center">User-centered approach</h4>
+        <p class="body caption center">My user-centered approach and strong design process will lead to increased conversions and user
           satisfaction on your website or application.</p>
       </div>
       <div class="card column">
@@ -288,8 +288,8 @@
           </defs>
         </svg>
 
-        <h4>Strong collaboration and efficient delivery</h4>
-        <p class="body">My strong collaboration, communication, and delivery skills will ensure a smooth and successful
+        <h4 class="center">Strong collaboration and efficient delivery</h4>
+        <p class="body caption center">My strong collaboration, communication, and delivery skills will ensure a smooth and successful
           project from start to finish.</p>
       </div>
       <div class="card column">
@@ -352,46 +352,132 @@
           </defs>
         </svg>
 
-        <h4>Cost-effective solutions</h4>
-        <p class="body">My skills and experience will ensure that the interfaces I design meet your business objectives
+        <h4 class="center">Cost-effective solutions</h4>
+        <p class="body caption center">My skills and experience will ensure that the interfaces I design meet your business objectives
           while also providing a great user experience, ultimately leading to long-term benefits for your business.</p>
       </div>
 
     </div>
   </div>
 
-  <div class="container padding" id="work">
-    <div class="content">
+  <div class="container padding-80" id="work">
+    <div class="gap-2">
       <h2>Experience in action</h2>
       <p class="subtitle">From DeFi and ReFi projects to NFT and Gaming Dapps, my designs are all about creating
         intuitive, user-friendly interfaces that bring concepts to life. Each project showcases my ability to understand
         and meet the needs of users while also delivering on the business objectives of my clients. Take a look and see
         the impact that my design skills can have on your next project.</p>
     </div>
-    <button class="btn-primary">Let's work together</button>
+    <div id="aramidModal" class="card row">
+      <div class="gap-2 project">
+        <div class="highlight">
+          <div class="tag">design system</div>
+          <div class="tag">ux/ui design</div>
+          <div class="tag">landing page</div>
+        </div>
+        <h3 class="aramid">Aramid Bridge</h3>
+        <div class="gap-1-2">
+          <h5>Description</h5>
+          <p class="body placeholder">Aramid Finance is a decentralized cross-chain protocol that enables the seamless transfer of assets across multiple blockchains. The platform utilizes bulletproof on-chain verification, a decentralized relayer node network, and a robust pipeline to ensure the security and convenience of its users. As a UX/UI designer, I was tasked with creating a user-friendly interface for the Aramid Finance platform that would make it easy for users to navigate and understand the various features and functionality of the platform.</p>
+        </div>
+        <div class="gap-1-2">
+          <h5>Design Challenges</h5>
+          <p class="body placeholder">The main design challenge for this project was to create an interface that would be easy to use for users with varying levels of technical expertise. The platform had a lot of complex functionality, and we wanted to make sure that users could easily access and understand all of the features without feeling overwhelmed. Additionally, as the platform supported multiple blockchains, we needed to ensure that the user could easily interact with all of the different blockchain networks.</p>
+        </div>
+        <div class="gap-1-2">
+          <h5>Design Process</h5>
+          <p class="body placeholder">To tackle these design challenges, we began by conducting user research to understand the needs and pain points of our target audience. We conducted user interviews and surveys to gather feedback and insights on how users currently interact with decentralized cross-chain protocols and what features they would like to see in a platform like Aramid Finance.
+            Based on our research, we created a set of user personas and user scenarios to guide our design decisions. We also created a set of design principles that would guide the overall look and feel of the interface.
+            Next, we created wireframes and mockups of the interface, and tested them with users to gather feedback and make iterative improvements. We also worked closely with the development team to ensure that the interface was technically feasible and compatible with the different blockchain networks.</p>
+        </div>
+        <div class="gap-1-2">
+          <h5>Final Design</h5>
+          <p class="body placeholder">The final design of the Aramid Finance interface is clean, modern, and easy to navigate. The interface is divided into three main sections: "Bridge", "Transaction History", and "Claim". The "Bridge" section allows users to easily transfer assets between different blockchains. In the "Claim" section, users can view their bridged assets and claim them on the destination chain. The "Transaction History" section allows users to view a detailed record of all their past transactions. Additionally, the interface is fully responsive and works seamlessly on all devices.
+            To simplify the current and future application developments, I have created a Design System in Figma, including Figma design tokens and components that can be used through all Figma design files.</p>
+        </div>
+        <div class="gap-1-2">
+          <h5>Conclusion</h5>
+          <p class="body placeholder">The design of the Aramid Finance platform was a challenging but rewarding project. By conducting user research and working closely with the development team, we were able to create a user-friendly interface that makes it easy for users to navigate and understand the various features and functionality of the platform. The final design of the interface is modern, clean, and responsive, making it easy for users to access the platform from any device.</p>
+        </div>
+      </div>
+      <div class="gap-1 align-end">
+        <button class="work-close hidden">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M15 9L9 15M15 15L9 9M21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12Z" stroke="#F3F8FF" stroke-opacity="0.4" stroke-width="2" stroke-linecap="round"/>
+          </svg>
+        </button>
+
+        <img src="image/aramid.webp" width="1032" height="1184">
+      </div>
+    </div>
+    <button class="btn-primary btn-open">Let's work together</button>
   </div>
 
-  <div class="container padding" id="testimonials">
-    <div class="content">
+  <div class="container padding-80" id="testimonials">
+    <div class="gap-1 align-center">
       <h2>What Clients Say About My Work</h2>
       <p class="subtitle">Testimonials from satisfied clients highlight the impact and value of my work as a UX/UI
         designer across various projects. Read what my clients have to say about my design skills and how it helped them
         achieve their goals.</p>
     </div>
-    <button class="btn-primary">Let's work together</button>
+    <button class="btn-primary btn-open">Let's work together</button>
   </div>
 
-  <div class="container padding cta">
-    <div class="content">
-      <h3 class="fire">Still have questions?</h3>
-      <p class="body">Don't hesitate to reach out and contact me directly. I will be pleased to chat and discuss
+  <div class="container padding-80 cta">
+    <div class="gap-1 align-center">
+      <h3 class="fire center">Still have questions?</h3>
+      <p class="body caption center">Don't hesitate to reach out and contact me directly. I will be pleased to chat and discuss
         your project needs.</p>
+      <button class="btn-primary margin-1 btn-open">Contact me directly</button>
     </div>
-    <button class="btn-primary">Contact me directly</button>
   </div>
-</main>
 
-<div id="top-of-site-pixel-anchor"></div>
+  <section class="modal hidden">
+    <div class="highlight fill-ctnr">
+      <h4>Let’s work together!</h4>
+      <button class="btn-close">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M15 9L9 15M15 15L9 9M21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12Z" stroke="#F3F8FF" stroke-opacity="0.4" stroke-width="2" stroke-linecap="round"/>
+        </svg>
+      </button>
+    </div>
+    <div class="cadre">
+      <div class="illu-container">
+        <img class="small" width="540" height="540" src="./image/pfp.webp">
+      </div>
+    </div>
+    <p class="body placeholder">Please chose the way you want to create our first contact.</p>
+    <div class="highlight fill-ctnr">
+      <a href="" class="btn-block">
+        <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M17.75 10.5L23 7.5V16.5L17.75 13.5M2.75 5.625H14.75C15.5456 5.625 16.3087 5.94107 16.8713 6.50368C17.4339 7.06629 17.75 7.82935 17.75 8.625V17.625C17.75 17.8239 17.671 18.0147 17.5303 18.1553C17.3897 18.296 17.1989 18.375 17 18.375H5C4.20435 18.375 3.44129 18.0589 2.87868 17.4963C2.31607 16.9337 2 16.1706 2 15.375V6.375C2 6.17609 2.07902 5.98532 2.21967 5.84467C2.36032 5.70402 2.55109 5.625 2.75 5.625Z" stroke="url(#paint0_linear_1558_6067)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          <defs>
+            <linearGradient id="paint0_linear_1558_6067" x1="2" y1="5.625" x2="19.9193" y2="21.7901" gradientUnits="userSpaceOnUse">
+              <stop stop-color="#FF6231"/>
+              <stop offset="0.5" stop-color="#FF7B31"/>
+              <stop offset="1" stop-color="#FFC700"/>
+            </linearGradient>
+          </defs>
+        </svg>
+        Book a call
+      </a>
+      <a  href="mailto:mannbrs@gmail.com" class="btn-block">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M6.74978 12.0001H12.7498M20.5779 11.3439L4.74353 2.47511C4.61015 2.40143 4.45749 2.37012 4.30588 2.38535C4.15426 2.40058 4.01089 2.46164 3.89483 2.56039C3.77878 2.65913 3.69556 2.79089 3.65625 2.93811C3.61694 3.08533 3.6234 3.24103 3.67478 3.38449L6.65603 11.747C6.72171 11.9093 6.72171 12.0909 6.65603 12.2532L3.67478 20.6157C3.6234 20.7592 3.61694 20.9149 3.65625 21.0621C3.69556 21.2093 3.77878 21.3411 3.89483 21.4398C4.01089 21.5386 4.15426 21.5996 4.30588 21.6149C4.45749 21.6301 4.61015 21.5988 4.74353 21.5251L20.5779 12.6564C20.6951 12.5915 20.7928 12.4964 20.8609 12.381C20.9289 12.2656 20.9648 12.1341 20.9648 12.0001C20.9648 11.8661 20.9289 11.7346 20.8609 11.6192C20.7928 11.5038 20.6951 11.4087 20.5779 11.3439Z" stroke="url(#paint0_linear_1558_6079)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          <defs>
+            <linearGradient id="paint0_linear_1558_6079" x1="3.63086" y1="2.38159" x2="25.2042" y2="13.0286" gradientUnits="userSpaceOnUse">
+              <stop stop-color="#FF6231"/>
+              <stop offset="0.5" stop-color="#FF7B31"/>
+              <stop offset="1" stop-color="#FFC700"/>
+            </linearGradient>
+          </defs>
+        </svg>
+        Write me
+      </a>
+    </div>
+  </section>
+  <div class="overlay hidden"></div>
+</main>
 
 <script type="module" src="./js/main.js"></script>
 </body>

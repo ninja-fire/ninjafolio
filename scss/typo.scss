@@ -1,0 +1,135 @@
+.fire {
+  background: linear-gradient(118.71deg, #FF6231 0%, #FF7B31 50%, #FFC700 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+
+.aramid {
+  background: linear-gradient(91.11deg, #FCD4FF 0%, #FB7EFF 30%, #7400FF 70%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+  text-align: left;
+
+}
+
+h1 {
+  font-style: normal;
+  font-weight: 900;
+  font-size: 4rem;
+  line-height: 4.5rem;
+  text-align: center;
+  padding-bottom: .5rem;
+
+  background: radial-gradient(54.8% 50% at 50% 50%, #FFFFFF 0%, #9E9E9E 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+
+}
+
+h2 {
+  font-style: normal;
+  font-weight: 900;
+  font-size: 48px;
+  line-height: 65px;
+  text-align: center;
+
+  background: radial-gradient(54.8% 50% at 50% 50%, #FFFFFF 0%, #9E9E9E 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+
+h3 {
+  font-style: normal;
+  font-weight: 900;
+  font-size: 2rem;
+  line-height: 43px;
+
+}
+
+h4 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 26px;
+
+  background: radial-gradient(54.8% 50% at 50% 50%, #FFFFFF 0%, #9E9E9E 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+
+h5 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+
+  color: #B1B4BC;
+}
+
+.menu-link {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  color: #B1B4BC;
+}
+
+a:hover {
+  color: #FFFFFF;
+}
+
+a:active {
+  color: #B1B4BC;
+}
+
+.name {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+  display: flex;
+  align-items: flex-end;
+  color: #71737C;
+}
+
+.subtitle {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+
+  display: flex;
+  align-items: flex-end;
+  text-align: center;
+
+  color: #71737C;
+}
+
+.body {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 22px;
+
+  display: flex;
+  align-items: flex-end;
+
+  text-overflow: ellipsis;
+
+  &.placeholder {
+    color: #71737C;
+  }
+
+  &.caption {
+    color: #B2B5BB;
+  }
+}
