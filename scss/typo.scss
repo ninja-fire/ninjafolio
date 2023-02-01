@@ -119,6 +119,12 @@ a:active {
   text-align: center;
 
   color: #71737C;
+
+  &.italic {
+    font-style: italic;
+    color: #B1B4BC;
+    text-align: left;
+  }
 }
 
 .body {
@@ -138,5 +144,9 @@ a:active {
 
   &.caption {
     color: #B2B5BB;
+  }
+
+  &.bold {
+    font-weight: 700;
   }
 }
