@@ -1,0 +1,106 @@
+.carousselle {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  //gap: -4rem;
+  //width: 100%;
+  //overflow: hidden;
+}
+
+.right {
+  left: 32%;
+  z-index: 0;
+  position: absolute;
+  transform: scale(0.8);
+}
+
+.left {
+  right: 32%;
+  z-index: 0;
+  position: absolute;
+  transform: scale(0.8);
+
+}
+
+.car-center {
+  z-index: 2;
+}
+
+.car-card {
+  display: flex;
+  align-items: center;
+  background: rgba(26, 26, 33, 0.8);
+  border: .1rem solid rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(2rem);
+  border-radius: 2rem;
+  cursor: pointer;
+  flex-direction: row;
+  padding: 1.5rem 1.5rem 1.5rem 2rem;
+  gap: 2rem;
+
+  transition: background-color .5s ease, transform 400ms ease-in-out;
+
+  &:hover {
+    background: rgba(31, 31, 39, 0.8);
+  }
+
+  &.car-center {
+    &:hover {
+      transform: scale(1.02);
+    }
+  }
+
+  &.left {
+    &:hover {
+      transform: scale(0.82);
+
+    }
+  }
+
+  &.right {
+    &:hover {
+      transform: scale(0.82);
+
+    }
+  }
+}
+
+.tag {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: .25rem .75rem;
+  gap: .5rem;
+  white-space: nowrap;
+  overflow: hidden;
+
+  &.arm {
+    background: linear-gradient(91.11deg, rgba(252, 212, 255, 0.08) 5.02%, rgba(251, 126, 255, 0.08) 66.64%, rgba(116, 0, 255, 0.08) 124.21%);
+    border: 1px solid #FCB2FF;
+    border-radius: 1000px;
+
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+
+    color: #FCB2FF;
+  }
+
+  &.pzl {
+    background: linear-gradient(135deg, rgba(42, 208, 202, 0.08) 0%, rgba(126, 225, 155, 0.08) 9.19%, rgba(225, 246, 100, 0.08) 20.05%, rgba(254, 176, 254, 0.08) 39.84%, rgba(171, 179, 252, 0.08) 62.24%, rgba(93, 247, 164, 0.08) 80.99%, rgba(88, 196, 246, 0.08) 100%);
+    border: 1px solid #B4ADFF;
+    border-radius: 1000px;
+
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+
+    color: #B4ADFF;
+  }
+}
