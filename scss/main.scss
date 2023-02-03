@@ -2,7 +2,7 @@
 @import "typo";
 @import "modal";
 @import "buttons";
-@import "carousselle";
+@import "carousel";
 @import "testimonial";
 
 * {
@@ -61,19 +61,6 @@ body {
     background-position: top center;
     background-repeat: no-repeat;
     gap: 0;
-  }
-
-  #work {
-    img {
-      width: 516px;
-      height: 592px;
-    }
-
-    .project {
-      height: 592px;
-      overflow: hidden;
-      text-overflow: ellipsis;
-    }
   }
 
   .container {
@@ -228,6 +215,28 @@ body {
     }
   }
 
+  #still {
+
+    h3 {
+      z-index: 1;
+    }
+
+    p {
+      z-index: 1;
+    }
+
+    button {
+      z-index: 1;
+    }
+
+    svg {
+      display: flex;
+      z-index: 0;
+      position: absolute;
+      bottom: 1%;
+      width: 56%;
+    }
+  }
 
   header {
     display: flex;
@@ -268,6 +277,11 @@ body {
     align-items: center;
     padding: 1rem 0;
 
+    text-decoration: underline;
+
+      &:hover {
+        text-decoration: none;
+      }
   }
 
 }
