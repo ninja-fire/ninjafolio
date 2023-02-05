@@ -59,3 +59,33 @@
   }
 
 }
+
+.btn-close {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 16px;
+  gap: 8px;
+
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+
+  background: rgba(31, 31, 39, 0.8);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(2rem);
+  border-radius: 1000px;
+  z-index: 5;
+  cursor: pointer;
+}
+
+#switch-left {
+  position: absolute;
+  left: 12%;
+}
+
+#switch-right {
+  position: absolute;
+  right: 12%;
+}

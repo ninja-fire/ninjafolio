@@ -24,6 +24,7 @@ body {
   font-size: 100%;
   font-family: 'Satoshi', sans-serif;
   align-items: center;
+  justify-content: center;
   position: relative;
 
   main {
@@ -34,6 +35,10 @@ body {
     align-items: center;
     padding: 4rem 0;
     gap: 4rem;
+  }
+
+  .hidden {
+    display: none;
   }
 
   .padding-80 {
@@ -61,6 +66,14 @@ body {
     background-position: top center;
     background-repeat: no-repeat;
     gap: 0;
+  }
+
+  #about {
+
+    .card {
+      //flex-grow: 1;
+      flex-basis: 30%;
+    }
   }
 
   .container {
@@ -149,7 +162,7 @@ body {
     display: flex;
     flex-direction: row;
     align-items: center;
-    //justify-content: center;
+    flex-wrap: wrap;
     gap: 1rem;
   }
 
