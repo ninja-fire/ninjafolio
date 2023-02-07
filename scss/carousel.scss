@@ -59,6 +59,12 @@
   .work-close {
   }
 
+  .desc-content {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
   &.modalWork {
     z-index: 200;
     position: fixed;
@@ -68,12 +74,20 @@
     right: 0;
     margin: 2rem;
     align-items: start;
+
+    .side {
+      height: -webkit-fill-available;
+
+      .desc-content {
+        overflow: scroll;
+        scroll-behavior: smooth;
+      }
+    }
   }
 
   &.car-left {
     &:hover {
       transform: scale(0.82);
-
     }
   }
 
