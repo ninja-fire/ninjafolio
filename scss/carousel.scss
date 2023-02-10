@@ -157,6 +157,19 @@
 
     color: #B4ADFF;
   }
+  &.misc {
+    background: linear-gradient(118.71deg, rgba(255, 98, 49, 0.08) 0%, rgba(255, 123, 49, 0.08) 50%, rgba(255, 199, 0, 0.08) 100%);
+    border: 1px solid #FF7B31;
+    border-radius: 1000px;
+
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+
+    color: #FF7B31;
+  }
 }
 
 .workOverlay {

@@ -48,16 +48,15 @@ const workOverlay = document.querySelector(".workOverlay");
 let cards = carousel.getElementsByClassName("car-card");
 let leftCard, centerCard, rightCard;
 const btnClose = document.createElement("div");
-let svg = document.createElementNS("http://www.w3.org/2000/svg",'svg');
-svg.style.height = "24px";
-svg.style.width = "24px";
+
+// let svg = document.createElementNS("http://www.w3.org/2000/svg",'svg');
+// svg.style.height = "24px";
+// svg.style.width = "24px";
 
 // Initialize the values of the variables
 leftCard = carousel.querySelector(".car-left");
 centerCard = carousel.querySelector(".car-center");
 rightCard = carousel.querySelector(".car-right");
-
-// const btnCloseSVG = document.images
 
 // Helper function to switch the cards
 const switchCards = (clickedCard) => {
@@ -74,17 +73,19 @@ const switchCards = (clickedCard) => {
 
         btnClose.classList.add("btn-close");
 
-        svg.innerHTML = "width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n" +
-            "<path d=\"M20 4L4 20M20 20L4 4\" stroke=\"url(#paint0_linear_1619_5838)\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n" +
+        btnClose.innerHTML =
+            "<svg width=\"16\" height=\"16\" viewBox=\"0 0 16 16\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n" +
+            "<path d=\"M13.3327 2.66675L2.66602 13.3334M13.3327 13.3334L2.66602 2.66675\" stroke=\"url(#paint0_linear_1648_5831)\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n" +
             "<defs>\n" +
-            "<linearGradient id=\"paint0_linear_1619_5838\" x1=\"4\" y1=\"4\" x2=\"23.049\" y2=\"14.4332\" gradientUnits=\"userSpaceOnUse\">\n" +
+            "<linearGradient id=\"paint0_linear_1648_5831\" x1=\"2.66602\" y1=\"2.66675\" x2=\"15.3653\" y2=\"9.62224\" gradientUnits=\"userSpaceOnUse\">\n" +
             "<stop stop-color=\"#FF6231\"/>\n" +
             "<stop offset=\"0.5\" stop-color=\"#FF7B31\"/>\n" +
             "<stop offset=\"1\" stop-color=\"#FFC700\"/>\n" +
             "</linearGradient>\n" +
-            "</defs>\n";
+            "</defs>\n" +
+            "</svg>\n";
 
-        btnClose.appendChild(svg);
+        // btnClose.appendChild(svg);
         clone.appendChild(btnClose);
 
 
@@ -133,7 +134,7 @@ const closeWorkModal = function () {
 
     document.getElementById("clone").remove();
 
-    svg.innerHTML = "";
+    // svg.innerHTML = "";
 };
 
 btnClose.addEventListener("click", closeWorkModal);
