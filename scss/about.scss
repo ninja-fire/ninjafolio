@@ -1,0 +1,41 @@
+.about-col {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+}
+.about-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1.5rem 2rem;
+  gap: 1rem;
+  isolation: isolate;
+
+  width: 20rem;
+  height: 20rem;
+
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(2rem);
+  border-radius: 2rem;
+  overflow: hidden;
+  cursor: pointer;
+
+  transition: all 400ms ease;
+
+  &:hover {
+    background: rgba(255, 255, 255, 0.03);
+  }
+
+  .bg-img {
+    position: absolute;
+    //align-items: center;
+    z-index: -1;
+  }
+}
+
+.scroll-rotation {
+  transform: rotate3D(0,1,0,180deg);
+}
