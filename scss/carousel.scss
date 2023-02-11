@@ -1,123 +1,167 @@
-#carousel {
+//#carousel {
+//  display: flex;
+//  flex-direction: row;
+//  align-items: center;
+//  justify-content: center;
+//  width: 100%;
+//}
+//
+//.car-right {
+//  right: 1%;
+//  z-index: 0;
+//  position: absolute;
+//  transform: scale(0.8);
+//  width: 80%;
+//
+//}
+//
+//.car-left {
+//  left: 1%;
+//  z-index: 0;
+//  position: absolute;
+//  transform: scale(0.8);
+//  width: 80%;
+//
+//}
+//
+//.car-center {
+//  z-index: 2;
+//  width: 100%;
+//
+//}
+//
+//.car-card {
+//  display: flex;
+//  align-items: center;
+//  background: rgba(26, 26, 33, 0.8);
+//  border: .1rem solid rgba(255, 255, 255, 0.08);
+//  backdrop-filter: blur(2rem);
+//  border-radius: 2rem;
+//  cursor: pointer;
+//  flex-direction: row;
+//  padding: 1.5rem 1.5rem 1.5rem 2rem;
+//  gap: 2rem;
+//
+//  transition: background-color .5s ease, transform 200ms ease-in-out;
+//
+//  &:hover {
+//    background: rgba(31, 31, 39, 0.8);
+//  }
+//
+//  &.car-center {
+//
+//    &:hover {
+//      transform: scale(1.02);
+//    }
+//
+//  }
+//
+//  .work-close {
+//  }
+//
+//  .desc-content {
+//    display: flex;
+//    flex-direction: column;
+//    gap: 2rem;
+//  }
+//
+//  &.modalWork {
+//    z-index: 200;
+//    position: fixed;
+//    top: 0;
+//    bottom: 0;
+//    left: 0;
+//    right: 0;
+//    margin: 2rem;
+//    align-items: start;
+//
+//    .side {
+//      height: -webkit-fill-available;
+//
+//      .desc-content {
+//        overflow: scroll;
+//        scroll-behavior: smooth;
+//      }
+//    }
+//  }
+//
+//  &.car-left {
+//    &:hover {
+//      transform: scale(0.82);
+//    }
+//  }
+//
+//  &.car-right {
+//    &:hover {
+//      transform: scale(0.82);
+//
+//    }
+//  }
+//
+//  .side {
+//    width: 50%;
+//    height: 40rem;
+//    overflow: hidden;
+//    text-overflow: ellipsis;
+//  }
+//
+//  .img {
+//    height: 100%;
+//    width: 100%;
+//    background-position: center;
+//    background-attachment: scroll;
+//    background-size: cover;
+//    background-repeat: no-repeat;
+//    border-radius: 1rem;
+//
+//    &.armimg {
+//      background-image: url("../image/aramid.png");
+//    }
+//  }
+//}
+//
+
+//.workOverlay {
+//  position: fixed;
+//  top: 0;
+//  bottom: 0;
+//  left: 0;
+//  right: 0;
+//  width: 100%;
+//  height: 100%;
+//  background: rgba(0, 0, 0, 0.5);
+//  backdrop-filter: blur(3px);
+//  z-index: 3;
+//}
+
+.work-card {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  width: 100%;
-}
-
-.car-right {
-  right: 1%;
-  z-index: 0;
-  position: absolute;
-  transform: scale(0.8);
-  width: 80%;
-
-}
-
-.car-left {
-  left: 1%;
-  z-index: 0;
-  position: absolute;
-  transform: scale(0.8);
-  width: 80%;
-
-}
-
-.car-center {
-  z-index: 2;
-  width: 100%;
-
-}
-
-.car-card {
-  display: flex;
-  align-items: center;
-  background: rgba(26, 26, 33, 0.8);
-  border: .1rem solid rgba(255, 255, 255, 0.08);
-  backdrop-filter: blur(2rem);
-  border-radius: 2rem;
-  cursor: pointer;
-  flex-direction: row;
-  padding: 1.5rem 1.5rem 1.5rem 2rem;
+  padding: 1.5rem 0;
   gap: 2rem;
 
-  transition: background-color .5s ease, transform 200ms ease-in-out;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(2rem);
+  border-radius: 2rem;
 
-  &:hover {
-    background: rgba(31, 31, 39, 0.8);
-  }
+  overflow: hidden;
 
-  &.car-center {
-
-    &:hover {
-      transform: scale(1.02);
-    }
-
-  }
-
-  .work-close {
-  }
-
-  .desc-content {
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-  }
-
-  &.modalWork {
-    z-index: 200;
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    margin: 2rem;
-    align-items: start;
-
-    .side {
-      height: -webkit-fill-available;
-
-      .desc-content {
-        overflow: scroll;
-        scroll-behavior: smooth;
-      }
-    }
-  }
-
-  &.car-left {
-    &:hover {
-      transform: scale(0.82);
-    }
-  }
-
-  &.car-right {
-    &:hover {
-      transform: scale(0.82);
-
-    }
-  }
-
-  .side {
-    width: 50%;
-    height: 40rem;
-    overflow: hidden;
-    text-overflow: ellipsis;
-  }
-
-  .img {
-    height: 100%;
+  img {
     width: 100%;
-    background-position: center;
-    background-attachment: scroll;
-    background-size: cover;
-    background-repeat: no-repeat;
-    border-radius: 1rem;
-
-    &.armimg {
-      background-image: url("../image/aramid.png");
-    }
+    height: 100%;
   }
+}
+
+.work-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0 2rem;
+  gap: 1rem;
+
+  width: -webkit-fill-available;
 }
 
 .tag {
@@ -157,6 +201,7 @@
 
     color: #B4ADFF;
   }
+
   &.misc {
     background: linear-gradient(118.71deg, rgba(255, 98, 49, 0.08) 0%, rgba(255, 123, 49, 0.08) 50%, rgba(255, 199, 0, 0.08) 100%);
     border: 1px solid #FF7B31;
@@ -170,17 +215,4 @@
 
     color: #FF7B31;
   }
-}
-
-.workOverlay {
-  position: fixed;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.5);
-  backdrop-filter: blur(3px);
-  z-index: 3;
 }
