@@ -61,19 +61,27 @@ body {
 
   #hero {
     background-image: url( '/image/squarebg.svg' );
-    height: 84vh;
+    //height: 84vh;
     justify-content: space-between;
     background-size: 80%;
     background-position: top center;
     background-repeat: no-repeat;
-    gap: 0;
+    //gap: 0;
+
+    .card {
+      flex-wrap: wrap;
+      width: 30%;
+    }
   }
 
   #about {
-
     .card {
       //flex-grow: 1;
       flex-basis: 30%;
+    }
+
+    .gap-2-row {
+      justify-content: center;
     }
   }
 
@@ -84,6 +92,7 @@ body {
     align-items: center;
     gap: 4rem;
     scroll-margin-top: 4rem;
+    padding-bottom: 5rem;
 
     &.cta {
       width: 24%;
@@ -108,18 +117,30 @@ body {
     display: flex;
     flex-direction: row;
     gap: 2rem;
+    flex-wrap: wrap;
   }
 
   .gap-1-row {
     display: flex;
     flex-direction: row;
     gap: 1rem;
+    flex-wrap: wrap;
+    //justify-content: center;
+  }
+
+  .gap-1-2-row {
+    display: flex;
+    flex-direction: row;
+    gap: .5rem;
+    flex-wrap: wrap;
+    justify-content: center;
   }
 
   .gap-2 {
     display: flex;
     flex-direction: column;
     gap: 2rem;
+    flex-wrap: wrap;
   }
 
   .gap-1-2 {
@@ -321,5 +342,79 @@ body {
   }
   100% {
     background-position: 0% 50%;
+  }
+}
+
+@media (max-width: 1250px) {
+
+  body {
+
+    header {
+      width: 84vw;
+    }
+
+    #hero {
+      justify-content: start;
+      height: 100%;
+
+      .card {
+        width: 40%;
+      }
+    }
+
+    .container {
+      width: 84vw;
+      gap: 2rem;
+      scroll-margin-top: 4rem;
+
+      &.cta {
+        width: 50%;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+
+  body {
+
+    header {
+      width: 92vw;
+    }
+
+    .container {
+      width: 92vw;
+      //gap: 4rem;
+      scroll-margin-top: 4rem;
+      padding-bottom: 3rem;
+
+      &.cta {
+        width: 80%;
+      }
+    }
+
+    #hero {
+      .card {
+        width: 100%;
+      }
+    }
+
+    #still {
+      svg {
+        bottom: 0;
+        width: 100%;
+      }
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  header {
+    width: 92vw;
+    top: 1rem;
+
+    button {
+      visibility: hidden;
+    }
   }
 }

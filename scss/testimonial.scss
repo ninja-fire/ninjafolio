@@ -6,35 +6,35 @@
 
 }
 
-.t-right {
-  left: 28%;
-  //top: 10%;
-  z-index: 0;
-  position: absolute;
-  //transform: scale(0.8);
-
-  &:hover {
-    left: 22%;
-  }
-}
-
-.t-left {
-  position: absolute;
-  right: 28%;
-  //top: 1%;
-  z-index: 0;
-  //transform: scale(0.8);
-
-  &:hover {
-    right: 22%;
-  }
-
-}
-
-.t-center {
-  z-index: 2;
- margin-bottom: 6rem;
-}
+//.t-right {
+//  left: 28%;
+//  //top: 10%;
+//  z-index: 0;
+//  position: absolute;
+//  //transform: scale(0.8);
+//
+//  &:hover {
+//    left: 22%;
+//  }
+//}
+//
+//.t-left {
+//  position: absolute;
+//  right: 28%;
+//  //top: 1%;
+//  z-index: 0;
+//  //transform: scale(0.8);
+//
+//  &:hover {
+//    right: 22%;
+//  }
+//
+//}
+//
+//.t-center {
+//  z-index: 2;
+// margin-bottom: 6rem;
+//}
 
 .testi-card {
   display: flex;
@@ -77,4 +77,17 @@
   }
 }
 
+@media (max-width: 768px) {
+  .testi-card {
+    width: 60%;
+    height: auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .testi-card {
+    width: auto;
+    height: auto;
+  }
+}
 

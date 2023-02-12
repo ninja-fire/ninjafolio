@@ -174,16 +174,16 @@
   white-space: nowrap;
   overflow: hidden;
 
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+
   &.arm {
     background: linear-gradient(91.11deg, rgba(252, 212, 255, 0.08) 5.02%, rgba(251, 126, 255, 0.08) 66.64%, rgba(116, 0, 255, 0.08) 124.21%);
     border: 1px solid #FCB2FF;
     border-radius: 1000px;
-
-    font-style: normal;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 20px;
-    text-align: center;
 
     color: #FCB2FF;
   }
@@ -193,12 +193,6 @@
     border: 1px solid #B4ADFF;
     border-radius: 1000px;
 
-    font-style: normal;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 20px;
-    text-align: center;
-
     color: #B4ADFF;
   }
 
@@ -207,12 +201,19 @@
     border: 1px solid #FF7B31;
     border-radius: 1000px;
 
-    font-style: normal;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 20px;
-    text-align: center;
-
     color: #FF7B31;
+  }
+}
+
+@media (max-width: 768px) {
+  .tag {
+    font-size: .8rem;
+    line-height: 1.25rem;
+  }
+}
+
+@media (max-width: 1250px) {
+  .work-card img {
+    width: 150%;
   }
 }
